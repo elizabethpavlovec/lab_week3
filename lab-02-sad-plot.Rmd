@@ -18,17 +18,9 @@ staff <- read_csv("data/instructional-staff.csv")
 
 --------
 
-
-Team member 1 should pull to download updates and begins here.
-
-
-
 ### Exercise 1
 
-*Remove this text and add your answer here. No code needed for this exercise!*
-
-
-Team member 1 should knit, stage & commit, and push all changes to GitHub.
+The data frame will have 55 rows because each faculty will have data for 11 years; therefore, 11 * 5 = 55 rows. 
 
 --------
 

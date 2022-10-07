@@ -40,10 +40,9 @@ staff_long <- staff %>%
 
 ### Exercise 3
 
-*Remove this text and add your answer here.*
 
 ```{r staff-long-inspect}
-# remove this comment and add your code here
+
 ```
 
 
@@ -56,19 +55,24 @@ Team member 3 should pull to download updates and begins here.
 
 ### Exercise 4
 
-*Remove this text and add your answer here.*
+We can't see any line in the plot.
 
 ```{r lineplot-1}
-# remove this comment and add your code here
+staff_long %>%
+  ggplot(aes(x = year, y = percentage, color = faculty_type)) +
+  geom_line()
+
 ```
 
 
 ### Exercise 5
 
-*Remove this text and add your answer here.*
+The part-time faculty increases over the year. The full-time tenure-track faculty and full-time tenure faculty decrease. And graduage student employees and full-time non-tenure-track faculty stay around  20% and 15%.
 
 ```{r lineplot-2}
-# remove this comment and add your code here
+staff_long %>%
+   ggplot(aes(x = year, y = percentage, color = faculty_type, group = faculty_type)) +
+   geom_point()+geom_line()
 ```
 
 

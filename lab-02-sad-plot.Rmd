@@ -85,8 +85,6 @@ Next team member should pull to download updates and continue from here.
 
 ### Exercise 6
 
-*Remove this text and add your answer here.*
-
 ```{r lineplot-3}
 staff_long %>%
    ggplot(aes(x = year, y = percentage, color = faculty_type, group = faculty_type)) +

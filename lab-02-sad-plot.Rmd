@@ -29,17 +29,17 @@ Team member 2 should pull to download updates and begins here.
 ### Exercise 2
 
 ```{r staff-long-create}
-staff_long <- staff %>%
+(staff_long <- staff %>%
   pivot_longer(
     cols = - faculty_type, 
     names_to = "year",
     values_to = "percentage"
-    )
+    ))
 ```
 
 
 ### Exercise 3
-
+_The guess regarding the number of rows from exercise 1 is correct._
 
 ```{r staff-long-inspect}
 
